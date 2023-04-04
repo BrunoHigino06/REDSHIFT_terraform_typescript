@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "@aws-cdk/aws-redshift": "^1.198.1"
+  }
+}
