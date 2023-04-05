@@ -6,7 +6,7 @@ export class RedshiftStack extends Stack {
   constructor(scope: Construct, id: string, props?: StackProps) {
     super(scope, id, props);
     const mapfre_redshift_pipefy = new redshift.CfnCluster(this, 'mapfre_redshift_pipefy', {
-      clusterType: 'single-node',
+      clusterType: '2',
       dbName: 'mapfre_redshift_pipefy',
       masterUsername: 'admin',
       masterUserPassword: '!QAZ2wsx',
