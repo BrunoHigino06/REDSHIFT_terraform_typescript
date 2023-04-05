@@ -21,7 +21,5 @@ export class RedshiftStack extends Stack {
       masterUserPassword: '!QAZ2wsx',
       nodeType: 'dc2.large',
     });
-
-
   }
 }
