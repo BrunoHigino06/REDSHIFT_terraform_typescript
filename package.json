@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@aws-cdk/aws-redshift": "^1.198.1",
+    "crypto-random-string": "^5.0.0"
+  }
+}
