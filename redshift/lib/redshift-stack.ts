@@ -37,16 +37,5 @@ export class RedshiftStack extends Stack {
     });
 
     mapfre_redshift_pipefy.addDependency(PipefySubnetGroups);
-
-    const mapfre_redshift_pipefy_analytics = new redshift.CfnCluster(this, 'mapfre_redshift_pipefy_analytics', {
-      clusterType: 'single-node',
-      dbName: 'mapfre_redshift_pipefy',
-      masterUsername: 'administrator',
-      masterUserPassword: password,
-      nodeType: 'dc2.large',
-      clusterSubnetGroupName: SubnetGroups
-    });
-
-    mapfre_redshift_pipefy_analytics.addDependency(PipefySubnetGroups);
   }
 }
